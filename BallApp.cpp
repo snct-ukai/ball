@@ -11,7 +11,7 @@ BallApp::~BallApp(){
 
 void BallApp::init()
 {
-  balls.resize(1);
+  balls.resize(10000);
 
   for (auto& b : balls)
     b.init();
@@ -53,7 +53,3 @@ void BallApp::onClick(sf::Event::MouseButtonEvent mouse){
 
 void BallApp::offClick(sf::Event::MouseButtonEvent mouse){
 }
-
-
-
-

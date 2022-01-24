@@ -1,6 +1,6 @@
 TARGET = main
 
-SRCS   = $(TARGET).cpp App.cpp Timer.cpp Rand.cpp BallApp.cpp Ball.cpp
+SRCS   = $(TARGET).cpp TextureManager.cpp App.cpp Timer.cpp Rand.cpp BallApp.cpp Ball.cpp
 OBJS   = $(SRCS:%.cpp=%.o)
 ## for macOS (SFML: brew)
 #CXX    = clang++

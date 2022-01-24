@@ -11,6 +11,8 @@ TextureManager::~TextureManager()
 TextureManager* TextureManager::getInstance()
 {
   // TODO: return a pointer of an unique instance
+  static TextureManager _instance;
+  return &_instance;
 }
 
 sf::Texture* TextureManager::get(const std::string& filename)
@@ -21,15 +23,3 @@ sf::Texture* TextureManager::get(const std::string& filename)
 
   return &textures[filename];
 }
-  
-
-
-
-
-
-
-
-
-
-
-
